@@ -1,0 +1,23 @@
+{% extends 'webapp/base.html' %}
+
+{% block content %}
+
+<h2>CRM Project</h2>
+<br>
+<h4>Keep track of records...</h4>
+<a class="btn btn-primary" type="button" href="https://www.google.com">Google Me</a>
+<a class="btn btn-primary" type="button" href="{% url '' %}">Register</a>
+
+<form autocomplete="off" method="post">
+  {% csrf_token %}
+  {{form.as_p}}
+  <br>
+  <button type="submit" class="btn btn-primary" name="button">Login</button>
+</form>
+<br>
+<div class="text-center">
+  <p>Don't have an account?</p><br>
+  <a class="btn btn-primary" type="button" href="{% url '' %}">Register</a>
+</div>
+
+{% endblock %}

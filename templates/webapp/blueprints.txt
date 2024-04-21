@@ -1,0 +1,21 @@
+Blueprint of HTML files
+-----------------------
+
+1. base.html
+	this will act like a parent class/interface whose property will be inherited by the
+	other pages.
+
+2. index.html : main page
+
+3. register.html
+
+4. login.html
+
+5. dashboard.html : view a set of records
+
+6. create_record.html
+
+7. update_record.html
+
+8. view_record.html
+

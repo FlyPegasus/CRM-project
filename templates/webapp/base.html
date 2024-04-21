@@ -1,0 +1,31 @@
+<!-- This file is gonna be inherited by all other html files -->
+<!-- Gonna be treated as parent file -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Project X</title>
+    <link rel="stylesheet" href="{% static '/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static '/css/mybase.css' %}">
+  </head>
+  <body>
+    <!-- Nav bar to be added here -->
+    {% include 'webapp/navbar.html' %}
+
+    <div class="container">
+      <!-- This is the main content area for each page -->
+        <h1>Base HTML</h1>
+        <!--
+          This block content area is going to be
+          the space where we add our unique content
+       -->
+        {% block content %}
+
+
+        {% endblock %}
+    </div>
+    <script type="text/javascript" src="{% static 'bootstrap.bundle.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'mybase.js' %}"></script>
+  </body>
+</html>
